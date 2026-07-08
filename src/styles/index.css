@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-navy-900 text-steel-100 antialiased;
+  }
+
+  ::selection {
+    @apply bg-cyber-500/30 text-white;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-16 sm:py-20 lg:py-24;
+  }
+
+  .text-gradient-cyber {
+    @apply bg-gradient-to-r from-cyber-600 via-cyber-500 to-matrix-500 bg-clip-text text-transparent;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-6 py-3 bg-cyber-600 hover:bg-cyber-500 text-white font-medium rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-cyber-500/25;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 px-6 py-3 border border-steel-400 hover:border-cyber-500 text-steel-300 hover:text-cyber-700 font-medium rounded-lg transition-all duration-300;
+  }
+
+  .card {
+    @apply bg-navy-700 border border-navy-500 rounded-xl p-6 transition-all duration-300 hover:border-cyber-400/70 hover:shadow-xl hover:shadow-cyber-400/10;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 bg-navy-800 border border-navy-500 rounded-lg text-steel-100 placeholder-steel-400 focus:border-cyber-500 focus:ring-2 focus:ring-cyber-500/20 focus:outline-none transition-all duration-200;
+  }
+
+  .skill-bar {
+    @apply h-2 bg-navy-600 rounded-full overflow-hidden;
+  }
+
+  .skill-fill {
+    @apply h-full rounded-full bg-gradient-to-r from-cyber-500 to-matrix-500 transition-all duration-1000 ease-out;
+  }
+}
+
+@layer utilities {
+  .grid-pattern {
+    background-image:
+      linear-gradient(rgba(34, 197, 94, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(34, 197, 94, 0.05) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+
+  .glow-text {
+    text-shadow: 0 0 20px rgba(34, 197, 94, 0.5);
+  }
+
+  @keyframes spin-slow {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .animate-spin-slow {
+    animation: spin-slow 25s linear infinite;
+  }
+}
