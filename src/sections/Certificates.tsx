@@ -6,6 +6,7 @@ interface Certificate {
   year: string;
   detail: string;
   badgeColor: string;
+  credentialUrl: string;
 }
 
 const certificatesList: Certificate[] = [
@@ -13,36 +14,49 @@ const certificatesList: Certificate[] = [
     name: 'Introduction to Cybersecurity',
     issuer: 'Cisco Networking Academy',
     year: '2026',
-    detail: 'Demonstrates understanding of core security concepts, packet protection, and defensive measures.',
-    badgeColor: 'cyber'
+    detail: 'Demonstrates understanding of core security concepts, threat intelligence, and defensive architectures.',
+    badgeColor: 'cyber',
+    credentialUrl: 'https://www.credly.com/badges/e302e5a3-8a92-4dbc-8347-3a2f851851e8/public_url'
+  },
+  {
+    name: 'Foundations of Cybersecurity',
+    issuer: 'Google Career Certificates',
+    year: '2026',
+    detail: 'Valuable concepts in network security auditing, threat detection protocols, and administrative control filters.',
+    badgeColor: 'cyber',
+    credentialUrl: 'https://www.skills.google/public_profiles/51e867aa-fc94-4d67-ae20-896cff6684f7/badges/25186964'
+  },
+  {
+    name: 'Play It Safe: Manage Security Risks',
+    issuer: 'Google Career Certificates',
+    year: '2026',
+    detail: 'Managing security vulnerabilities, risk-mitigation plans, and aligning security frameworks with NIST CSF.',
+    badgeColor: 'cyber',
+    credentialUrl: 'https://www.skills.google/public_profiles/51e867aa-fc94-4d67-ae20-896cff6684f7/badges/25183730'
   },
   {
     name: 'Social Media Marketing',
     issuer: 'Learning With Earning (LWE)',
     year: '2025',
     detail: 'Covers key digital marketing algorithms, client acquisitions, and analytics dashboards.',
-    badgeColor: 'matrix'
+    badgeColor: 'matrix',
+    credentialUrl: 'https://www.linkedin.com/in/muhammad-faizan-ali-546538374'
   },
   {
     name: 'Graphic Designing',
     issuer: 'Learning With Earning (LWE)',
     year: '2025',
     detail: 'Focuses on layouts, visual proportions, typography scales, and premium assets workflow.',
-    badgeColor: 'matrix'
+    badgeColor: 'matrix',
+    credentialUrl: 'https://www.linkedin.com/in/muhammad-faizan-ali-546538374'
   },
   {
     name: 'Fiverr Freelancing & E-Commerce',
     issuer: 'Learning With Earning (LWE)',
     year: '2025',
     detail: 'E-commerce interface strategy, gig rankings optimization, and freelance project management.',
-    badgeColor: 'matrix'
-  },
-  {
-    name: 'MS Word & Excel Mastery',
-    issuer: 'Falcons Institution',
-    year: '2024',
-    detail: 'Advanced spreadsheet formulas, database scripting, data validation, and documentation standards.',
-    badgeColor: 'cyber'
+    badgeColor: 'matrix',
+    credentialUrl: 'https://www.linkedin.com/in/muhammad-faizan-ali-546538374'
   }
 ];
 
@@ -103,7 +117,7 @@ export function Certificates() {
 
               {/* Action Verify */}
               <a
-                href="https://www.linkedin.com/in/muhammad-faizan-ali-546538374"
+                href={cert.credentialUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-fit flex items-center gap-1.5 text-xs font-mono font-bold text-steel-400 hover:text-cyber-400 transition-colors mt-auto pt-4 border-t border-navy-900/60"

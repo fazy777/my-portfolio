@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { ExternalLink, Github, Shield, Layout, Server, Cpu, Database, CheckCircle2, AlertTriangle, Code2 } from 'lucide-react';
+import silverloftImg from '../Screenshot 2026-07-08 231251.png';
 
 interface Project {
   id: string;
@@ -108,22 +109,16 @@ export function Projects() {
                 {/* SVG/CSS Render based on project ID */}
                 <div className="flex-grow flex items-center justify-center py-6">
                   {project.id === 'silverloft' ? (
-                    <div className="w-full max-w-[240px] p-4 bg-navy-900 border border-navy-800 rounded-lg shadow-lg relative font-sans text-left">
-                      {/* Luxury header mock */}
-                      <div className="text-[10px] uppercase tracking-widest text-cyber-500 font-bold mb-2">SILVERLOFT</div>
-                      <div className="w-1/2 h-1.5 bg-steel-400 rounded-full mb-1" />
-                      <div className="w-1/3 h-1 bg-steel-500 rounded-full mb-4" />
-                      {/* Mock Product Image Box */}
-                      <div className="aspect-[4/3] bg-navy-950 border border-navy-800 rounded flex items-center justify-center mb-3 relative overflow-hidden group-hover:border-cyber-500/40 transition-colors">
-                        <Layout className="w-8 h-8 text-steel-500 group-hover:text-cyber-500 transition-colors" />
-                        <div className="absolute bottom-1 right-1 px-1.5 py-0.5 bg-cyber-500/20 text-cyber-400 text-[8px] rounded font-mono border border-cyber-500/30">
-                          PREVIEW
-                        </div>
-                      </div>
-                      {/* Mock tags */}
-                      <div className="flex justify-between items-center">
-                        <div className="w-12 h-2 bg-steel-400 rounded-full" />
-                        <div className="w-8 h-3 bg-cyber-600 rounded" />
+                    <div className="w-full h-full relative overflow-hidden rounded-lg border border-navy-800 bg-navy-900/60 aspect-[1.5] flex items-center justify-center">
+                      <img 
+                        src={silverloftImg} 
+                        alt="SilverLoft Luxury Furniture Thumbnail" 
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-end p-3">
+                        <span className="text-[10px] font-mono text-cyber-400 bg-black/85 px-2 py-0.5 rounded border border-cyber-500/20">
+                          LIVE: www.silverloft.me
+                        </span>
                       </div>
                     </div>
                   ) : (
