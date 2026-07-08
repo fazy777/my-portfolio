@@ -19,7 +19,7 @@ const certificatesList: Certificate[] = [
     credentialUrl: 'https://www.credly.com/badges/e302e5a3-8a92-4dbc-8347-3a2f851851e8/public_url'
   },
   {
-    name: 'Foundations of Cybersecurity',
+    name: 'Introduction to Generative Al',
     issuer: 'Google Career Certificates',
     year: '2026',
     detail: 'Valuable concepts in network security auditing, threat detection protocols, and administrative control filters.',
@@ -27,7 +27,7 @@ const certificatesList: Certificate[] = [
     credentialUrl: 'https://www.skills.google/public_profiles/51e867aa-fc94-4d67-ae20-896cff6684f7/badges/25186964'
   },
   {
-    name: 'Play It Safe: Manage Security Risks',
+    name: 'Introduction to Large Language Models',
     issuer: 'Google Career Certificates',
     year: '2026',
     detail: 'Managing security vulnerabilities, risk-mitigation plans, and aligning security frameworks with NIST CSF.',
