@@ -25,7 +25,7 @@ const projectsList: Project[] = [
     description: 'A modern luxury furniture and interior design website built with a clean responsive interface, elegant animations, reusable components, optimized performance, and a premium user experience.',
     technologies: ['HTML5', 'CSS3', 'JavaScript (ES6+)', 'Tailwind CSS', 'Responsive Design', 'Git'],
     github: 'https://github.com/fazy777/silverloft-white',
-    live: 'https://fazy777.github.io/silverloft-white',
+    live: 'https://www.silverloft.me/',
     liveLabel: 'Launch Demo',
     features: [
       'Pixel-perfect responsive layout scaling from 4K screens down to mobile devices.',
