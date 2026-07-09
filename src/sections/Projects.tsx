@@ -258,7 +258,6 @@ export function Projects() {
                     className="inline-flex items-center gap-2 px-4 py-2 bg-cyber-500/10 hover:bg-cyber-500/20 border border-cyber-500/20 hover:border-cyber-500 rounded-xl text-xs sm:text-sm text-cyber-400 font-mono transition-all duration-200"
                   >
                     <ExternalLink className="w-4 h-4" />
-                    <span>{project.liveLabel}</span>
                   </a>
                 </div>
 
