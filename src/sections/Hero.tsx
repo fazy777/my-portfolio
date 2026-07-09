@@ -106,12 +106,12 @@ export function Hero() {
       className="relative min-h-screen flex items-center justify-center overflow-hidden py-20 bg-navy-950"
     >
       {/* Visual cyber backgrounds */}
-      <div className="absolute inset-0 grid-pattern pointer-events-none opacity-40" />
+      <div className="absolute inset-0 grid-pattern pointer-events-none opacity-20 sm:opacity-40" />
       <div className="absolute inset-0 bg-gradient-to-b from-navy-950 via-navy-900/35 to-navy-950 pointer-events-none" />
       
       {/* Floating ambient glow spheres */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-cyber-500/10 rounded-full blur-3xl pointer-events-none animate-pulse-slow" />
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-matrix-500/10 rounded-full blur-3xl pointer-events-none animate-pulse-slow" />
+      <div className="absolute top-10 left-10 w-72 h-72 sm:w-96 sm:h-96 bg-cyber-500/5 sm:bg-cyber-500/10 rounded-full blur-3xl pointer-events-none animate-pulse-slow" />
+      <div className="absolute bottom-10 right-10 w-72 h-72 sm:w-96 sm:h-96 bg-matrix-500/5 sm:bg-matrix-500/10 rounded-full blur-3xl pointer-events-none animate-pulse-slow" />
 
       <div className="relative z-10 section-container w-full grid lg:grid-cols-12 gap-12 items-center">
         {/* Left column: Text details */}

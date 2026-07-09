@@ -28,7 +28,7 @@ export function Navbar() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
           ? 'bg-navy-900/95 backdrop-blur-md border-b border-navy-500 shadow-lg'
-          : 'bg-transparent'
+          : 'bg-navy-950/80 backdrop-blur-md border-b border-navy-900/50 sm:bg-transparent sm:backdrop-blur-none sm:border-b-0'
       }`}
     >
       <div className="section-container">
@@ -56,7 +56,7 @@ export function Navbar() {
 
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="sm:hidden p-2 text-steel-400 hover:text-cyber-600 hover:bg-navy-600 rounded-lg transition-colors"
+            className="sm:hidden p-2 -mr-2 text-steel-400 hover:text-cyber-600 hover:bg-navy-600 rounded-lg transition-all duration-200 flex items-center justify-center"
             aria-label="Toggle menu"
           >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -66,13 +66,13 @@ export function Navbar() {
 
       {isOpen && (
         <div className="sm:hidden bg-navy-800/95 backdrop-blur-md border-t border-navy-500">
-          <div className="section-container py-4 space-y-1">
+          <div className="section-container py-4 space-y-1 text-center">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="block px-4 py-3 text-steel-400 hover:text-cyber-600 hover:bg-navy-600 rounded-lg transition-all duration-200 font-medium"
+                className="block text-center px-4 py-3 text-steel-400 hover:text-cyber-600 hover:bg-navy-600 rounded-lg transition-all duration-200 font-medium"
               >
                 {link.name}
               </a>
